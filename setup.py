@@ -6,6 +6,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="image_processing",
     version="0.1.0",
+    project_urls={
+        "Homepage": "https://github.com/Ednei284/image-processing-package",
+        "Source": "https://github.com/Ednei284/image-processing-package",
+    },
     author="Ednei",
     author_email="metal2024heavy@email.com",
     description="Uma breve descrição do seu pacote",
@@ -19,8 +23,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-    install_requires=[
-        "requests>=2.25.1",
-        "numpy>=1.19.5",
-    ],
+    install_requires=["numpy>=1.19.5", "scikit-image>=0.19.0", "matplotlib>=3.10.1"],
 )
