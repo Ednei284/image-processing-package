@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name="image_processing",
+    version="0.1.0",
+    author="Ednei",
+    author_email="metal2024heavy@email.com",
+    description="Uma breve descrição do seu pacote",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/ednei284/image-processing-package",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+    install_requires=[
+        "requests>=2.25.1",
+        "numpy>=1.19.5",
+    ],
+)
